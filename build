@@ -1,0 +1,8 @@
+#!/bin/bash
+./pmd-bin-7.0.0-rc1/bin/pmd check -f text -R rulesets/java/quickstart.xml -d ./jnasmartcardio-master/src/main/java/jnasmartcardio/tools
+echo "Análisis terminado, creamos jar"
+sleep 2
+jar cf jna.jar ./jnasmartcardio-master/src/*    
+echo "Jar creado, ejecutamos el test"
+sleep 2
+java -cp /home/alumno/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar:./jnasmartcardio-master/src/test/java org.junit.runner.JUnitCore jnasmartcardio.WinscardReaderTestWithCardPresent > log.txt
