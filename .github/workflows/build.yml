@@ -1,0 +1,19 @@
+name: Workflow
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del código
+      uses: actions/checkout@v2
+
+    - name: Análisis del Código
+      run: |
+        ./pmd-bin-7.0.0-rc1/bin/pmd check -f text -R rulesets/java/quickstart.xml -d ./src/main/java
+
+    - name: crear jar
+      run: |
+        jar cf jna.jar ./jnasmartcardio-master/src/*    
