@@ -10,7 +10,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<easybuggy-port>8080</easybuggy-port>
+		<easybuggy-port>8081</easybuggy-port>
 		<!-- default properties (JDK 1.7 or earlier) -->
 		<jvm.args.perm.size>-XX:MaxPermSize=128m</jvm.args.perm.size>
 		<jvm.args.gc.log.path>-Xloggc:logs/gc.log</jvm.args.gc.log.path>

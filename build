@@ -6,6 +6,6 @@ jar cf jna.jar ./jnasmartcardio-master/src/*
 echo "Jar creado, ejecutamos el test"
 sleep 2
 java -cp /home/alumno/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar:./jnasmartcardio-master/src/test/java org.junit.runner.JUnitCore jnasmartcardio.WinscardReaderTestWithCardPresent > log.txt
-echo "test log creado, ejecutamos easybuggy"
+echo "test log creado, ejecutamos easybuggy en puerta 8081"
 sleep 2
 mvn clean install
