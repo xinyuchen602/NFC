@@ -16,4 +16,5 @@ jobs:
 
     - name: crear jar
       run: |
-        jar cf jna.jar ./jnasmartcardio-master/src/*    
+        jar cfm jna.jar MANIFEST.txt ./jnasmartcardio-master/src/*
+          
