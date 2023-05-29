@@ -1,0 +1,2 @@
+Main-Class: jnasmartcardio-master/src/main/java/jnasmartcardio/tools/WaitForChange
+
