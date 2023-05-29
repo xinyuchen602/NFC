@@ -1,6 +1,6 @@
 #!/bin/bash
 ./pmd-bin-7.0.0-rc1/bin/pmd check -f text -R rulesets/java/quickstart.xml -d ./jnasmartcardio-master/src/main/java/jnasmartcardio/tools
-echo "Análisis terminado, creamos jar"
+echo "analisis.txt creado, creamos jar"
 sleep 2
 jar cfm jna.jar MANIFEST.txt ./jnasmartcardio-master/src/*
 echo "Jar creado, ejecutamos el test"

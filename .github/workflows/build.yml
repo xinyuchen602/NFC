@@ -12,7 +12,7 @@ jobs:
 
     - name: Análisis del Código
       run: |
-        ./pmd-bin-7.0.0-rc1/bin/pmd check -f text -R rulesets/java/quickstart.xml -d ./jnasmartcardio-master/src/main/java/jnasmartcardio/tools
+        ./pmd-bin-7.0.0-rc1/bin/pmd check -f text -r analisis.txt -R rulesets/java/quickstart.xml -d ./jnasmartcardio-master/src/main/java/jnasmartcardio/tools
 
     - name: crear jar
       run: |
