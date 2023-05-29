@@ -17,5 +17,5 @@ jobs:
           
     - name: Crear Test 
       run: |
-        java -cp /home/alumno/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar:./jnasmartcardio-master/src/test/java org.junit.runner.JUnitCore jnasmartcardio.WinscardReaderTestWithCardPresent > log.txt
+        java -cp ./junit/4.8.1/junit-4.8.1.jar:./jnasmartcardio-master/src/test/java org.junit.runner.JUnitCore jnasmartcardio.WinscardReaderTestWithCardPresent > log.txt
 
