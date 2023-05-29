@@ -1,5 +1,0 @@
-./jnasmartcardio-master/src/main/java/jnasmartcardio/tools/WaitForChange.java:18:	UseUtilityClass:	This utility class has a non-private constructor
-./jnasmartcardio-master/src/main/java/jnasmartcardio/tools/WaitForChange.java:20:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
-./jnasmartcardio-master/src/main/java/jnasmartcardio/tools/WaitForChange.java:21:	ForLoopCanBeForeach:	This for loop can be replaced by a foreach loop
-./jnasmartcardio-master/src/main/java/jnasmartcardio/tools/WaitForChange.java:21:	ControlStatementBraces:	This statement should have braces
-./jnasmartcardio-master/src/main/java/jnasmartcardio/tools/WaitForChange.java:28:	UnconditionalIfStatement:	Do not use if statements that are always true or always false

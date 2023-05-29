@@ -6,9 +6,13 @@ jar cfm jna.jar MANIFEST.txt ./jnasmartcardio-master/src/*
 echo "Jar creado, ejecutamos el test"
 sleep 2
 java -cp /home/alumno/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar:./jnasmartcardio-master/src/test/java org.junit.runner.JUnitCore jnasmartcardio.WinscardReaderTestWithCardPresent > log.txt
-echo "test log creado, ejecutamos easybuggy en puerta 8080"
-sleep 2
-mvn clean install
-echo "easybuggy en puerta 8080 montado, analizamos con PMD"
+echo "test log creado, analizamos easybuggy con PMD"
 sleep 2
 ./pmd-bin-7.0.0-rc1/bin/pmd check -f text -R rulesets/java/quickstart.xml -d ./easybuggy-master/
+echo "analizado, ejecutamos easy buggy en puerto 8081"
+sleep 2
+cd easybuggy-master/ 
+mvn clean install
+
+
+
